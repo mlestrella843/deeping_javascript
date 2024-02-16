@@ -16,3 +16,5 @@ let a = 20,
 
     // imprimes las variables dentro de una tabla y se guarda en un objeto temporal
     console.table( { a, b, c, d } );
+
+    //Para ek uso de breakpoints, te vas a la consola del navegador, y activas la pestana source.
