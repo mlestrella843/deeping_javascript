@@ -36,3 +36,28 @@ console.log( 'Vivo: ', personaje['vivo']);
 
 console.log( 'Ultima pelicula: ', personaje['ultima-pelicula'] );
 
+// Para borrar una propiedad en un objeto literal hacemos asi:
+delete personaje.edad;
+console.log( personaje );
+
+
+// si queremos agregar una nueva propiedad hacemos asi:
+personaje.casado = true;
+// Para convertir las propiedades y sus valores en arreglos hacemos lo siguiente.
+// en el arreglo, en el inidice 0 esta la propiedad, y en el 1, sus valor o valores.
+const entriesPares = Object.entries( personaje );
+console.log (entriesPares);
+
+// Para frizar el objeto, es decir que no acepte nuevas propiedades o modificaciones a las ya existentes, hago lo siguinete:
+Object.freeze( personaje );
+// si intento agregar otra propiedad como:
+personaje.dinero = 10000000;
+//comprobaremos que no se agrego esta nueva propiedad
+console.log( personaje );
+
+// Si queremos obtener por separado las propiedades y sus valores existen estos dos metodos.
+const propiedades = Object.getOwnPropertyNames( personaje );
+const valores = Object.values( personaje );
+
+console.log({ propiedades, valores });
+
