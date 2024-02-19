@@ -20,14 +20,14 @@ console.log( { nuevaLongitud, juegos } );
 nuevaLongitud = juegos.unshift('Fire emblem'); // Este metodo unshift permite insertar un elemento al inicio del arreglo
 console.log( { nuevaLongitud, juegos } );
 
-let juegoBorrado = juegos.pop();
+let juegoBorrado = juegos.pop(); // saca el primer elemento del arreglo
 console.log( { juegoBorrado, juegos } );
 
 let pos = 1;
 
 console.log( juegos );
 let juegosBorrados = juegos.splice( pos, 2); // el metodo splice permmite borrar a partir de una posicion, un numero dado de elementos
-console.log( { juegosBorrados, juegos });
+console.log( { juegosBorrados, juegos } );
 
 //el metodo indexOf devuelve el indice del elemento pasado por parametro
 // es case sensitive, el parametro debe ser exacto al elemento que se quiere buscar.
