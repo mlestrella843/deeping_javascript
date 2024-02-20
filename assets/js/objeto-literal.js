@@ -1,6 +1,6 @@
 // objetos literales
 
-let personaje  = {
+const personaje  = {
     nombre: 'Tony Stark',
     codeName: 'Ironman',
     vivo: false,
@@ -16,7 +16,6 @@ let personaje  = {
     },
 
     'ultima-pelicula': 'Infinity War' // para usar guiones en las propiedadess debo colocarlas entre comillas simples.
-
 };
 
 console.log(personaje);

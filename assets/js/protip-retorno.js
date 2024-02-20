@@ -33,3 +33,17 @@ console.log({ casada, viva, nombre, saludo });
 const { apellido: nuevoApellido } = crearPersona( ' Pepe', 'Perez' );
 console.log(nuevoApellido);
 
+// Ejemplo de desestructuracion
+const maria  = {
+    nombre: 'Marie Etoile',
+    codeName: 'Ironman',
+    vivo: true,
+    edad: 40,
+    trajes:[ 'Mark1', 'Mark2', 'Hulbuster'],
+};
+
+const imprimePersonaje = ({ nombre, edad = 15 }) => {
+    console.log( {nombre, edad} );
+}
+
+imprimePersonaje( maria );
