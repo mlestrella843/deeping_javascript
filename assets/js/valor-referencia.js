@@ -25,3 +25,30 @@ juan.nombre = 'Pedro';
 //se reflejaran en ambos al mismo tiempo.
 
 console.log({ juan,ana });
+
+// Para remediar o poder trabajar con objetos de manera que no se alteren las variables hacemos lo siguiente
+// Si lo dejamos tal cual, pasara lo mismo de que tanto peter como maria tendran el mismo valor
+// porque en los objetos de javascript las asignaciones de propiedadses, son por referecia.
+const cambiarPersona = (persona) => {
+    persona.nombre = 'Tony';
+    return persona
+}
+
+let peter = { nombre: 'Peter'};
+
+let maria = cambiarPersona(peter);
+
+console.log({ peter, maria });
+
+// Para evitar esto hacemos
+// se utiliza el operador spread dentro de llaves, para romper con esto.
+
+const cambiarPersona1 = ({...persona}) => {
+    persona.nombre = 'Tony';
+    return persona
+}
+
+let peter1 = { nombre: 'Peter'};
+
+let maria1 = cambiarPersona1(peter1); 
+console.log({ peter1, maria1 });
