@@ -52,3 +52,20 @@ let peter1 = { nombre: 'Peter'};
 
 let maria1 = cambiarPersona1(peter1); 
 console.log({ peter1, maria1 });
+
+//Arreglos
+
+const frutas = ['Manzana', 'Pera', 'Piña'];
+const otrasFrutas = frutas;
+otrasFrutas.push('Mango');
+console.table({ frutas, otrasFrutas });
+// Como vemos nos ocurre lo mismo que en los objetos. Se esta asignando el espacio de memoria mas que el valor
+// que queremos insertar.
+// Para arreglar esto hacemos lo siguiente
+// Aqui lo que hacemos es que agregamos el operador spread para separar el arreglo frutas, es decir
+// que sea un espacio de memoria diferente al arreglo de frutas. 
+// otras Frutas1 tiene el valos de frutas pero ya es un nuevo arreglo, es decir, un espacio de memoria diferente.
+const otrasFrutas1 = [...frutas];
+otrasFrutas1.push('Zapote');
+console.table({ frutas, otrasFrutas1 });
+
