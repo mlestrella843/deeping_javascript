@@ -12,5 +12,10 @@ console.log({dia});
 if ( dia === 0 ) {
     console.log( 'Es Domingo')
 }else{
-    console.log( 'El dia no es domingo');
+    
+    if( dia === 1 ) {
+        console.log('Lunes');
+    }else{
+        console.log('No es lunes ni domingo');
+    }
 }
