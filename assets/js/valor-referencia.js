@@ -54,7 +54,6 @@ let maria1 = cambiarPersona1(peter1);
 console.log({ peter1, maria1 });
 
 //Arreglos
-
 const frutas = ['Manzana', 'Pera', 'Piña'];
 const otrasFrutas = frutas;
 otrasFrutas.push('Mango');
