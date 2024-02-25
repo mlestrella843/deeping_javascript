@@ -23,3 +23,16 @@ if ( dia === 0 ) {
         console.log(' No es lunes, martes o domingo');
     }
 }
+
+// ALTERNATIVAS: sin usar if-else, o switch podemos usar objetos.
+dia = 5;
+const diasLetras = {
+    0: 'Domingo',
+    1: 'Lunes',
+    2: 'Martes',
+    3: 'Miércoles',
+    4: 'Jueves',
+    5: 'Viernes',
+    6: 'Sábado'
+}; 
+console.log(diasLetras[dia]);
