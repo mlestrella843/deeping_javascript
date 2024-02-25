@@ -13,9 +13,13 @@ if ( dia === 0 ) {
     console.log( 'Es Domingo')
 }else{
     
-    if( dia === 1 ) {
-        console.log('Lunes');
-    }else{
-        console.log('No es lunes ni domingo');
+    if( dia === 0 ) {
+        console.log('DOMINGO');
+    }else if( dia === 1 ){
+        console.log('LUNES');
+    } else if( dia === 2 ){
+        console.log('MARTES');
+    } else{
+        console.log(' No es lunes, martes o domingo');
     }
 }
