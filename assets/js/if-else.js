@@ -24,15 +24,19 @@ if ( dia === 0 ) {
     }
 }
 
-// ALTERNATIVAS: sin usar if-else, o switch podemos usar objetos.
+// ALTERNATIVAS: sin usar if-else, o switch podemos usar OBJETOS.
 dia = 5;
 const diasLetras = {
-    0: 'Domingo',
-    1: 'Lunes',
-    2: 'Martes',
-    3: 'Miércoles',
-    4: 'Jueves',
-    5: 'Viernes',
-    6: 'Sábado'
-}; 
-console.log(diasLetras[dia]);
+    0:'Domingo - 0',
+    1:'Lunes - 1',
+    2:'Martes - 2',
+    3:'Miércoles - 3',
+    4:'Jueves - 4',
+    5:'Viernes - 5',
+    6:'Sábado - 6'
+}
+
+// ALTERNATIVAS: sin usar if-else, o switch podemos usar ARREGLOS
+const diasLetras2 = ['Domingo', 'Lunes', 'Martes', 'Miércoles','Jueves','Viernes','Sábado'];
+
+console.log(diasLetras2[dia] || 'Dia no valido');
