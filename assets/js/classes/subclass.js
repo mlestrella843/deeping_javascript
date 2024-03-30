@@ -35,25 +35,30 @@ class Persona {
         return ` La comida favorita de ${this.nombre} es ${this.comida} `
     }
 
-    quienSoy = () => {
+    quienSoy(){
         console.log(` Soy ${this.nombre} y mi identidad es ${this.codigo} `);
     } 
 
-    miFrase = () => {
-        console.log(` ${this.codigo} dice:  ${this.frase} `);
+    miFrase(){
+        console.log(` ${this.codigo} dice: ${this.frase} `);
     } 
 }
 
 class Heroe extends Persona{
    
     clan = 'Sin clan';
+
     constructor( nombre, codigo, frase ){
         super( nombre, codigo, frase );
+        this.clan = 'Avengers';
+    }
+
+    quienSoy(){
+        console.log(`Soy ${this.nombre}, ${this.clan}`);
+          super.quienSoy();
     }
 
 }
-
-
 
 const spiderman = new Persona( 'Peter Parker','Spider','Soy tu buen vecino');
 const ironman = new Persona( 'Tony Stark','Iron','Soy Ironman');
@@ -62,4 +67,5 @@ const wonderWomen = new Persona( 'Gal Gadot ','Wonder','Soy WonderWoman');
 const batman = new Heroe( 'Batman', 'Batman inicia', 'Soy el heroe de la noche' );
 console.log( batman );
 
-// batman.quienSoy();
+batman.quienSoy();
+batman.miFrase();
