@@ -1,4 +1,4 @@
-// CLASES USANDO ECS5, para navegadores viejos
+// CLASES USANDO ES5, para navegadores viejos
 
 // Si defino cada objeto realmente seria insostenible cada vez que quiera un objeto nuevo tener que definirlo,
 // como el ejemplo de aqui abajo.
