@@ -2,12 +2,21 @@
 
 class Persona {
 
+    // Cuando se trabaja con propiedades y metodos estaticos, se trabaja directamente con la estructura de la clase
+    // por lo que las propiedades instanciadas no se podran accesar a traves de estas propiedades y metodos estaticos.
 
     static _conteo = 0;
-    
+
     static get getConteo(){
         return Persona._conteo + ' Instancias';
     }
+
+    static mensaje(){
+        console.log('Tratando de imprimir la propiedad nombre desde este metodo', this.nombre);
+        console.log(' Hola, soy un metodo estatico');
+    }
+
+
 
     nombre = ''; 
     codigo = '';
@@ -58,3 +67,5 @@ const wonderWomen = new Persona( 'Gal Gadot ','Wonder','Soy WonderWoman');
 
 console.log( 'Conteo Estatico', Persona._conteo )
 console.log( ' Uso de getConteo directamente' , Persona.getConteo );
+
+Persona.mensaje();
