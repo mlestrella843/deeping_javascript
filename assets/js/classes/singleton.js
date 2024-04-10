@@ -6,6 +6,12 @@ class Singleton{
 
     constructor(nombre = ' ') {
 
+        if ( !!Singleton.instancia) {
+          //  throw new Error( `Error: singleton already +  ${Singleton.instancia} ` ) 
+            return Singleton.instancia;
+        
+        }
+
             Singleton.instancia = this;
             this.nombre = nombre;
 
