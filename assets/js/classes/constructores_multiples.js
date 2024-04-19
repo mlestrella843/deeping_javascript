@@ -1,6 +1,8 @@
 class Persona {
 
-    static porObjeto( { nombre, apellido, pais } ){
+    //* Este metodo estatico permite retornar una nueva instancia de persona pero recibiendo como parametro 
+    //* un objeto. En este caso un objeto con las mismas propiedades del constructor Persona.
+    static porObjeto({ nombre, apellido, pais }){
         return new Persona( nombre, apellido, pais );
     }
 
